@@ -13,9 +13,11 @@ function addNewTimer() {
       newTimerCard.innerHTML = `
           <span>Time Left :</span>
           <span id="timer-container">
-              <input id="hour" type="number" min="0" max="24" placeholder="${hours}">
-              <input id="minute" type="number" min="0" max="60" placeholder="${minutes}">
-              <input id="seconds" type="number" min="0" max="60" placeholder="${seconds}">
+              <input id="hour" type="number" min="00" max="24" placeholder="${hours}">
+              
+              <input id="minute" type="number" min="00" max="60" placeholder="${minutes}">
+              
+              <input id="seconds" type="number" min="00" max="60" placeholder="${seconds}">
           </span>
           <button class="btn" onclick="deleteTimer(this)">Delete</button>
           `;
